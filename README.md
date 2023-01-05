@@ -14,15 +14,22 @@ Using the Excel workbook in your .zip file, modify and analyze the sample-projec
 * Use conditional formatting to fill each cell in the `Percent Funded` column according to a three-color scale. The scale should start at 0 with a dark shade of red, and it should transition to green at 100 and blue at 200.
   * Create a new column called `Average Donation` that uses a formula to find how much each project backer paid on average.
   * Create two new columns, one called `Parent Category` and another called `Sub-Category`, that use formulas to split the `Category and Sub-Category` column into the two new, separate columns.
+  
   <img width="1405" alt="Screenshot 2023-01-04 at 9 47 21 PM" src="https://user-images.githubusercontent.com/112406455/210698584-26ec4bdd-23b3-422e-b552-0a010b81c402.png">
 
   * Create a new sheet with a pivot table that analyzes your initial worksheet to count how many campaigns were successful, failed, canceled, or are currently live per **category**.
 * Create a stacked-column pivot chart that can be filtered by country based on the table that you created.
+
+<img width="1417" alt="Screenshot 2023-01-05 at 4 44 46 PM" src="https://user-images.githubusercontent.com/112406455/210894613-17f90ed3-76b1-474d-ba2b-799fb0b4490c.png">
+
 * Create a new sheet with a pivot table that analyzes your initial sheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category**.
 * Create a stacked-column pivot chart that can be filtered by country and parent category based on the table that you created.
 * The dates in the `deadline` and `launched_at` columns use Unix timestamps. Fortunately for us, this [formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) that can be used to convert these timestamps to a normal date.
   * Create a new column named `Date Created Conversion` that will use this [formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) to convert the data contained in `launched_at` into Excel's date format.
   * Create a new column named `Date Ended Conversion` that will use this [formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) to convert the data contained in `deadline` into Excel's date format.
+ 
+ <img width="1341" alt="Screenshot 2023-01-05 at 4 47 39 PM" src="https://user-images.githubusercontent.com/112406455/210895532-e75bf8c8-f880-4364-94e3-15b1a7931175.png">
+
   * Create a new sheet with a pivot table that has a column of `outcome`, rows of `Date Created Conversion`, values based on the count of `outcome`, and filters based on `parent category` and `Years`.
   * Now, create a pivot-chart line graph that visualizes this new table.
 * Create a report in Microsoft Word, and answer the following questions:
@@ -52,6 +59,9 @@ Using the Excel workbook in your .zip file, modify and analyze the sample-projec
   * 40000 to 44999
   * 45000 to 49999
   * Greater than or equal to 50000
+ 
+ <img width="1239" alt="Screenshot 2023-01-05 at 4 48 23 PM" src="https://user-images.githubusercontent.com/112406455/210895867-cb3d67ec-77de-45d7-8969-3d2c14d2de49.png">
+
 * Using the `COUNTIFS()` formula, count how many successful, failed, and canceled projects were created with goals within the ranges listed above. Populate the `Number Successful`, `Number Failed`, and `Number Canceled` columns with these data points.
 * Add up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematical formula, find the percentage of projects that were successful, failed, or canceled per goal range.
 * Create a line chart that graphs the relationship between a goal amount and its chances of success, failure, or cancellation.
@@ -59,6 +69,10 @@ Using the Excel workbook in your .zip file, modify and analyze the sample-projec
 Most people would use the number of campaign backers to assess the success of a crowdfunding campaign. Creating a summary statistics table is one of the most efficient ways that data scientists can characterize quantitative metrics, such as the number of campaign backers.
 
 For gaining an in-depth understanding of campaign backers, evaluate the number of backers of successful and unsuccessful campaigns by creating **your own** summary statistics table.
+* Create a new worksheet in your workbook, and create one column for the number of backers of successful campaigns and one column for unsuccessful campaigns.
+
+<img width="507" alt="Screenshot 2023-01-05 at 4 57 43 PM" src="https://user-images.githubusercontent.com/112406455/210896424-37ce13b5-f3f1-4b34-9d23-683360395953.png">
+
 * Create a new worksheet in your workbook, and create one column for the number of backers of successful campaigns and one column for unsuccessful campaigns.
 * Use Excel to evaluate the following values for successful campaigns, and then do the same for unsuccessful campaigns:
   * The mean number of backers
@@ -69,6 +83,9 @@ For gaining an in-depth understanding of campaign backers, evaluate the number o
   * The standard deviation of the number of backers
 * Use your data to determine whether the mean or the median better summarizes the data.
 * Use your data to determine if there is more variability with successful or unsuccessful campaigns. Does this make sense? Why or why not?
+
+![Screenshot 2023-01-05 at 4 48 37 PM copy](https://user-images.githubusercontent.com/112406455/210896451-311a3bd1-84cf-4c11-bfc0-19fc36db909a.jpg)
+
 ## References
 Data for this dataset was generated by edX Boot Camps LLC, and is intended for educational purposes only.
 
