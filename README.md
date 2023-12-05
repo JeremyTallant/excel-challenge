@@ -42,3 +42,11 @@ For the first part of our analysis, we will apply conditional formatting to the 
 	* **Canceled Campaigns**: For campaigns labeled as `canceled`, a light yellow background with dark yellow text will be used. This highlights campaigns that have been discontinued or aborted.
 
 ![image](images/outcome.png)
+
+Next we will create a new column called `Percent Funded` to the left of the outcome column that uses a formula to find out how much money a campaign made relative to its initial funding goal. The formula to be used is as follows:
+```excel
+=E2/D2*100
+```
+Then we will use conditional formatting to fill each cell in the Percent Funded column according to a three-color scale. The scale should start at 0 with a dark shade of red, and it should transition to green at 10 and blue at 200. 
+
+![image](images/percentfunded.png)
