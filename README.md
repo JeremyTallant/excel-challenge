@@ -47,6 +47,6 @@ Next we will create a new column called `Percent Funded` to the left of the outc
 ```excel
 =E2/D2*100
 ```
-Then we will use conditional formatting to fill each cell in the Percent Funded column according to a three-color scale. The scale should start at 0 with a dark shade of red, and it should transition to green at 10 and blue at 200. 
+Then we will use conditional formatting to fill each cell in the Percent Funded column according to a three-color scale. The scale should start at 0 with a dark shade of red, and it should transition to green at 100 and blue at 200. 
 
 ![image](images/percentfunded.png)
