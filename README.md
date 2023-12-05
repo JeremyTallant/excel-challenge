@@ -33,12 +33,12 @@ For the first part of our analysis, we will apply conditional formatting to the 
 
 3. **Creating Specific Rules**: We will set up four distinct rules under the `Format only cells that contain` option, each targeting `Specific Text` containing certain keywords. The rules are as follows:
 
-	* **Live Campaigns**: Cells that contain the word `Live` will be formatted with a light blue background and dark blue text. This color scheme is indicative of ongoing or active campaigns.
+	* **Live Campaigns**: Cells that contain the word `live` will be formatted with a light blue background and dark blue text. This color scheme is indicative of ongoing or active campaigns.
 
-	* **Successful Campaigns**: For cells containing `Successful`, a light green background with dark green text will be applied. This represents the accomplishment of the campaign goals.
+	* **Successful Campaigns**: For cells containing `successful`, a light green background with dark green text will be applied. This represents the accomplishment of the campaign goals.
 
-	* **Failed Campaigns**: Cells marked `Failed` will be highlighted with a light red background and dark red text. This coloring denotes that the campaign did not achieve its intended targets.
+	* **Failed Campaigns**: Cells marked `failed` will be highlighted with a light red background and dark red text. This coloring denotes that the campaign did not achieve its intended targets.
 
-	* **Canceled Campaigns**: For campaigns labeled as `Canceled`, a light yellow background with dark yellow text will be used. This highlights campaigns that have been discontinued or aborted.
+	* **Canceled Campaigns**: For campaigns labeled as `canceled`, a light yellow background with dark yellow text will be used. This highlights campaigns that have been discontinued or aborted.
 
 ![image](images/outcome.png)
