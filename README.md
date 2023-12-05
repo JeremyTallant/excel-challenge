@@ -25,7 +25,7 @@ This project utilizes a specially curated dataset titled "CrowdfundingBook.xlsx,
 | `spotlight`             | A Boolean value indicating whether the campaign was highlighted in a spotlight feature. |
 | `category & sub-category` | The main category and sub-category classification of the campaign. |
 ## Analysis
-In the initial phase of our analysis, we will apply conditional formatting to the `outcome` column. This process will visually differentiate each campaign based on its status - whether it's live, successful, failed, or canceled. Here's how to execute this:
+For the first part of our analysis, we will apply conditional formatting to the `outcome` column. This process will visually differentiate each campaign based on its status - whether it's live, successful, failed, or canceled. Here's how to execute this:
 
 1. **Selecting the Column**: First, select all of column F, where the campaign outcomes are listed.
 
@@ -33,10 +33,12 @@ In the initial phase of our analysis, we will apply conditional formatting to th
 
 3. **Creating Specific Rules**: We will set up four distinct rules under the `Format only cells that contain` option, each targeting `Specific Text` containing certain keywords. The rules are as follows:
 
-* **Live Campaigns**: Cells that contain the word `Live` will be formatted with a light blue background and dark blue text. This color scheme is indicative of ongoing or active campaigns.
+	* **Live Campaigns**: Cells that contain the word `Live` will be formatted with a light blue background and dark blue text. This color scheme is indicative of ongoing or active campaigns.
 
-* **Successful Campaigns**: For cells containing `Successful`, a light green background with dark green text will be applied. This represents the accomplishment of the campaign goals.
+	* **Successful Campaigns**: For cells containing `Successful`, a light green background with dark green text will be applied. This represents the accomplishment of the campaign goals.
 
-* **Failed Campaigns**: Cells marked `Failed` will be highlighted with a light red background and dark red text. This coloring denotes that the campaign did not achieve its intended targets.
+	* **Failed Campaigns**: Cells marked `Failed` will be highlighted with a light red background and dark red text. This coloring denotes that the campaign did not achieve its intended targets.
 
-* **Canceled Campaigns**: For campaigns labeled as `Canceled`, a light yellow background with dark yellow text will be used. This highlights campaigns that have been discontinued or aborted.
+	* **Canceled Campaigns**: For campaigns labeled as `Canceled`, a light yellow background with dark yellow text will be used. This highlights campaigns that have been discontinued or aborted.
+
+![image](images/outcome.png)
