@@ -47,6 +47,14 @@ Next we will create a new column called `Percent Funded` to the left of the outc
 ```excel
 =E2/D2*100
 ```
-Then we will use conditional formatting to fill each cell in the Percent Funded column according to a three-color scale. The scale should start at 0 with a dark shade of red, and it should transition to green at 100 and blue at 200. 
+Ensure the column is formatted as a Number with no decimal places. Then we will use conditional formatting to fill each cell in the Percent Funded column according to a three-color scale. The scale should start at 0 with a dark shade of red, and it should transition to green at 100 and blue at 200. 
 
 ![image](images/percentfunded.png)
+
+Now let's create a new column called `Average Donation` that uses a formula to find how much each project backer paid on average. The formula to be applied is as follows:
+```excel
+=E3/H3
+```
+Format the column as a Number with two decimal places and modify cell I1 to 0 to prevent errors in the formula, as division by zero is not permissible.
+
+![image](images/AverageDonation.png)
