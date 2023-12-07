@@ -58,3 +58,14 @@ Now let's create a new column called `Average Donation` that uses a formula to f
 Format the column as a Number with two decimal places and modify cell I1 to 0 to prevent errors in the formula, as division by zero is not permissible.
 
 ![image](images/AverageDonation.png)
+
+Then create two new columns, one called `Parent Category` and another called `Sub-Category`, that uses formulas to split the `Category and Sub-Category` column into the two new, separate columns. The formula for Parent Category is: 
+```excel 
+=LEFT(P2,SEARCH("/",P2)-1)
+```
+The formula for the Sub-Category is: 
+```excel
+=RIGHT(P2,LEN(P2)-SEARCH("/",P2))
+```
+
+![image](images/CategorySplit.png)
