@@ -24,7 +24,7 @@ This project utilizes a specially curated dataset titled `CrowdfundingBook.xlsx`
 | `staff_pick`            | A Boolean value indicating whether the campaign was featured as a staff pick. |
 | `spotlight`             | A Boolean value indicating whether the campaign was highlighted in a spotlight feature. |
 | `category & sub-category` | The main category and sub-category classification of the campaign. |
-## Analysis
+## Data Preparation and Visualization Development 
 For the first part of our analysis, we will apply conditional formatting to the `outcome` column. This process will visually differentiate each campaign based on its status - whether it's live, successful, failed, or canceled. Here's how to execute this:
 
 1. **Selecting the Column**: First, select all of column F, where the campaign outcomes are listed.
