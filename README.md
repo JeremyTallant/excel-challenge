@@ -59,11 +59,11 @@ Format the column as a Number with two decimal places and modify cell I1 to 0 to
 
 ![image](images/AverageDonation.png)
 
-Then create two new columns, one called `Parent Category` and another called `Sub-Category`, that uses formulas to split the `Category and Sub-Category` column into the two new, separate columns. The formula for Parent Category is: 
+Then create two new columns, one called `Parent Category` and another called `Sub-Category`, that uses formulas to split the `Category and Sub-Category` column into the two new, separate columns. The formula for Parent Category is as follows: 
 ```excel 
 =LEFT(P2,SEARCH("/",P2)-1)
 ```
-The formula for the Sub-Category is: 
+For Sub-Category, use this formula: 
 ```excel
 =RIGHT(P2,LEN(P2)-SEARCH("/",P2))
 ```
