@@ -80,4 +80,4 @@ Then create a stacked-column pivot chart with a country filter, based on the tab
 
 Next, lets create a new worksheet titled `Sub-Category` with a pivot table that analyzes the initial worksheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category**. Insert a new Pivot Table on the Sub-Category worksheet and drag `Sub-category` to the rows, `outcome` to the columns and values section, and `country` and `Parent Category` to the filter section. 
 
-![images/images/PivotTable2.png)
+![images/PivotTable2.png)
