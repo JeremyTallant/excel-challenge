@@ -103,6 +103,18 @@ Now, create a pivot-chart line graph that visualizes this new table. Select any 
 
 ![image](images/PivotChart3.png)
 
-## Crowdfunding Campaign Analysis Report
+## Crowdfunding Campaign Insights
+### Conclusions from Data Analysis:
+* **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
+* **Seasonal Trends**: Success rates across various parent categories peak during summer, diminishing significantly with the end of the season and the onset of fall.
+* **Goal-Based Outcomes**: Campaigns with funding goals set between $15,000 and $30,000 exhibit the highest success, particularly those within the $15,000 to $24,999 range. A noticeable decline in success rates occurs as the goal amounts increase.
+### Dataset Limitations:
+* **Sample Size**: With only 1,000 projects, the dataset may not adequately represent the broader spectrum of crowdfunding campaigns, limiting the ability to generalize findings.
+* **Category Bias**: A significant 70% of the projects are concentrated within three categories (theater, film and video, and music), skewing results in favor of these categories and potentially overshadowing others.
+* **Goal Range Bias**: A majority of 85% of projects fall into just three goal ranges, which could bias the perceived success rates within these ranges.
+### Potential Additional Visualizations:
+* **Average Donations by Category**: A pivot table and chart reflecting average donations per category could provide deeper understanding of donor expectations within each category.
+* **Percent Funded by Category**: Visualizing the percent funded relative to goals in each category might offer insights into which categories tend to receive more generous funding.
+* **Backer Count by Category**: Analyzing the count of backers in each category through a pivot table and chart could inform expectations regarding participant numbers in crowdfunding campaigns by category.
 
  
