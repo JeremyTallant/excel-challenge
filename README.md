@@ -94,5 +94,8 @@ The dates in the `deadline` and `launched_at` columns use Unix timestamps. Fortu
 * Create a new column named `Date Ended Conversion` next to the `Date Created Conversion` column that converts the data contained in `deadline` into Excel's date format by using the following formula: 
 ```excel
 =(((M2/60)/60)/24)+DATE(1970,1,1)
-```  
+```
+Then, create a new sheet titled `Date & Category` with a pivot table that has a column of `outcome`, rows of `Date Created Conversion`, values based on the count of `outcome`, and filters based on `parent category` and `Years`. 
+
+![image](images/PivotTable3.png)
  
