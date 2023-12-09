@@ -1,7 +1,7 @@
-# Crowdfunding Success Analysis Project
+# Crowdfunding Campaign Analysis Project
 ![image](https://user-images.githubusercontent.com/112406455/210690798-73a47e19-5fad-4461-9c11-9a5433545ecb.png)
 ## Background
-Welcome to the Crowdfunding Success Analysis Project! In the past decade, crowdfunding platforms like Kickstarter and Indiegogo have revolutionized the way ideas get funded, enabling everyone from independent creators to famous celebrities to turn their visions into reality. The surge in popularity of these platforms has led to an incredibly diverse array of projects seeking funding, ranging from innovative tech products to unique artistic endeavors.
+Welcome to the Crowdfunding Campaign Analysis Project! In the past decade, crowdfunding platforms like Kickstarter and Indiegogo have revolutionized the way ideas get funded, enabling everyone from independent creators to famous celebrities to turn their visions into reality. The surge in popularity of these platforms has led to an incredibly diverse array of projects seeking funding, ranging from innovative tech products to unique artistic endeavors.
 
 However, the path to crowdfunding success is not straightforward. While some projects soar past their funding goals, others struggle to gain traction. Understanding what contributes to a project's success or failure in such a dynamic and competitive environment is crucial, especially for organizations and individuals looking to launch their own crowdfunding campaigns.
 
@@ -102,4 +102,7 @@ Then, create a new sheet titled `Date & Category` with a pivot table that has a 
 Now, create a pivot-chart line graph that visualizes this new table. Select any cell with the pivot table. Then navigate to the `Insert` tab and select `PivotChart`. After inserting the chart, change the chart type to a `2-D Line`. 
 
 ![image](images/PivotChart3.png)
+
+## Crowdfunding Campaign Analysis Report
+
  
