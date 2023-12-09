@@ -95,7 +95,11 @@ The dates in the `deadline` and `launched_at` columns use Unix timestamps. Fortu
 ```excel
 =(((M2/60)/60)/24)+DATE(1970,1,1)
 ```
-Then, create a new sheet titled `Date & Category` with a pivot table that has a column of `outcome`, rows of `Date Created Conversion`, values based on the count of `outcome`, and filters based on `parent category` and `Years`. 
+Then, create a new sheet titled `Date & Category` with a pivot table that has a column of `outcome`, rows of `Date Created Conversion`, values based on the count of `outcome`, and filters based on `Parent category` and `Years`. 
 
 ![image](images/PivotTable3.png)
+
+Now, create a pivot-chart line graph that visualizes this new table. Select any cell with the pivot table. Then navigate to the `Insert` tab and select `PivotChart`. After inserting the chart, change the chart type to a `2-D Line`. 
+
+![image](images/PivotChart3.png)
  
