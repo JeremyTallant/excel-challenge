@@ -87,11 +87,11 @@ Then create a stacked-column pivot chart that can be filtered by country and par
 ![image](images/PivotChart2.png)
 
 The dates in the `deadline` and `launched_at` columns use Unix timestamps. Fortunately for us, <a href="https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html" target="_blank">this formula</a> can be used to convert these timestamps to a normal date.
-	* Create a new column named `Date Created Conversion` next to the `deadline` column on the `Crowdfunding` worksheet. Then covert the data contained in `lanched_at` into Excel's date format by using the following formula: 
+* Create a new column named `Date Created Conversion` next to the `deadline` column on the `Crowdfunding` worksheet. Then covert the data contained in `lanched_at` into Excel's date format by using the following formula: 
 ```excel
 =(((L2/60)/60)/24)+DATE(1970,1,1)
 ```
-	* Create a new column named `Date Ended Conversion` next to the `Date Created Conversion` that converts the data contained in `deadline` into Excel's date format by using the following formula: 
+* Create a new column named `Date Ended Conversion` next to the `Date Created Conversion` that converts the data contained in `deadline` into Excel's date format by using the following formula: 
 ```excel
 =(((M2/60)/60)/24)+DATE(1970,1,1)
 ```  
