@@ -91,7 +91,7 @@ The dates in the `deadline` and `launched_at` columns use Unix timestamps. Fortu
 ```excel
 =(((L2/60)/60)/24)+DATE(1970,1,1)
 ```
-* Create a new column named `Date Ended Conversion` next to the `Date Created Conversion` that converts the data contained in `deadline` into Excel's date format by using the following formula: 
+* Create a new column named `Date Ended Conversion` next to the `Date Created Conversion` column that converts the data contained in `deadline` into Excel's date format by using the following formula: 
 ```excel
 =(((M2/60)/60)/24)+DATE(1970,1,1)
 ```  
