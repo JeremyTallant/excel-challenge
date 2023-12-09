@@ -86,5 +86,6 @@ Then create a stacked-column pivot chart that can be filtered by country and par
 
 ![image](images/PivotChart2.png)
 
-The dates in the `deadline` and `launched_at` columns use Unix timestamps. Fortunately for us, [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) can be used to convert these timestamps to a normal date.
+The dates in the `deadline` and `launched_at` columns use Unix timestamps. Fortunately for us, <a href="https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html" target="_blank">this formula</a> can be used to convert these timestamps to a normal date.
+
  
