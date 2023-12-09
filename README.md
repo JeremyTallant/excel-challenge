@@ -85,3 +85,6 @@ Next, lets create a new worksheet titled `Sub-Category` with a pivot table that 
 Then create a stacked-column pivot chart that can be filtered by country and parent category, based on the table we have created. Begin by selecting any cell within the pivot table. Then, navigate to the `Insert` tab and select `PivotChart`. After inserting the chart, change the chart type to a stacked-column chart
 
 ![image](images/PivotChart2.png)
+
+The dates in the `deadline` and `launched_at` columns use Unix timestamps. Fortunately for us, [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) can be used to convert these timestamps to a normal date.
+ 
