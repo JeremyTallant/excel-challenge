@@ -102,6 +102,8 @@ Then, create a new sheet titled `Date & Category` with a pivot table that has a 
 Now, create a pivot-chart line graph that visualizes this new table. Select any cell with the pivot table. Then navigate to the `Insert` tab and select `PivotChart`. After inserting the chart, change the chart type to a `2-D Line`. 
 
 ![image](images/PivotChart3.png)
+## Crowdfunding Goal Analysis 
+
 
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
