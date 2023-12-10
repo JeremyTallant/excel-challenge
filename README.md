@@ -126,8 +126,13 @@ In the `Goal` column, create 12 rows with the following headers:
 * 40000 to 44999
 * 45000 to 49999
 * Greater than or equal to 50000
+Using the `COUNTIFS()` formula, we will count how many successful, failed, and canceled projects were created with goals within the ranges listed above. We will populate the `Number Successful`, `Number Failed`, and `Number Canceled` columns with these data points.
 
+Then we are going to add up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematical formula, we will find the percentage of projects that were successful, failed, or canceled per goal range. 
 
+Next we will create a line chart that graphs the relationship between  a goal amount and its chances of success, failure, or cancellation. 
+
+![image](images/GoalAnalysis.png)
 
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
