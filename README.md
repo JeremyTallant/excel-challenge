@@ -138,6 +138,8 @@ Next we will create a line chart that graphs the relationship between  a goal am
 Most people would use the number of campaign backers to assess the success of a crowdfunding campaign. Creating a summary statistics table is one of the most efficient ways that data scientists can characterize quantitative metrics, such as the number of campaign backers.
 
 For gaining an in-depth understanding of campaign backers, we are going to evaluate the number of backers of successful and unsuccessful campaigns by creating our own summary statistics table. 
+
+First start by creating a new worksheet titled `Statistical Analysis`, and create one column for the number of backers of successful campaigns and one column for unsuccessful campaigns. 
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
