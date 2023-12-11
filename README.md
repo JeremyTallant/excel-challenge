@@ -134,7 +134,10 @@ Then we are going to add up each of the values in the `Number Successful`, `Numb
 Next we will create a line chart that graphs the relationship between  a goal amount and its chances of success, failure, or cancellation. 
 
 ![image](images/GoalAnalysis.png)
+## Statistical Analysis
+Most people would use the number of campaign backers to assess the success of a crowdfunding campaign. Creating a summary statistics table is one of the most efficient ways that data scientists can characterize quantitative metrics, such as the number of campaign backers.
 
+For gaining an in-depth understanding of campaign backers, we are going to evaluate the number of backers of successful and unsuccessful campaigns by creating our own summary statistics table. 
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
