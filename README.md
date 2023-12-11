@@ -139,7 +139,7 @@ Most people would use the number of campaign backers to assess the success of a 
 
 For gaining an in-depth understanding of campaign backers, we are going to evaluate the number of backers of successful and unsuccessful campaigns by creating our own summary statistics table. 
 
-First start by creating a new worksheet titled `Statistical Analysis`, and then proceed to create the following columns: `Outcome`, `backers_count`, `Z-score successful_backers_count`, `Probability_distribution` for successful campaigns, and repeat these columns for unsuccessful campaigns as `Outcome`, `backers_count`, `Z-score failed_backers_count`, `Probability_distribution`. 
+First start by creating a new worksheet titled `Statistical Analysis`, and then proceed to create the following columns: `Outcome`, `backers_count`, `Z-score successful_backers_count`, `Probability_distribution` for successful campaigns, and repeat these columns for unsuccessful campaigns as `Outcome`, `backers_count`, `Z-score failed_backers_count`, `Probability_distribution`.
  
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
