@@ -139,7 +139,7 @@ Most people would use the number of campaign backers to assess the success of a 
 
 For gaining an in-depth understanding of campaign backers, we are going to evaluate the number of backers of successful and unsuccessful campaigns by creating **our own** summary statistics table. 
 
-First start by creating a new worksheet titled `Statistical Analysis`, and then proceed to create the following columns starting a Column H: `Outcome`, `backers_count`, `Z-score successful_backers_count`, `Probability_distribution` for successful campaigns, and repeat these columns for unsuccessful campaigns as `Outcome`, `backers_count`, `Z-score failed_backers_count`, `Probability_distribution`.
+First start by creating a new worksheet titled `Statistical Analysis`, and then proceed to create the following columns starting at Column H: `Outcome`, `backers_count`, `Z-score successful_backers_count`, `Probability_distribution` for successful campaigns, and repeat these columns for unsuccessful campaigns as `Outcome`, `backers_count`, `Z-score failed_backers_count`, `Probability_distribution`.
 
 To capture all instances of `successful` outcomes in Column H, we will implement the following formula:
 ```excel
@@ -155,6 +155,7 @@ We will then commence the construction of our summary statistics table in Column
 * `Statistics`
 * `Successful`
 * `Failed` 
+
 Then create 6 rows with the following headings:
 * `Mean`
 * `Median`
