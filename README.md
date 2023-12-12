@@ -139,8 +139,18 @@ Most people would use the number of campaign backers to assess the success of a 
 
 For gaining an in-depth understanding of campaign backers, we are going to evaluate the number of backers of successful and unsuccessful campaigns by creating our own summary statistics table. 
 
-First start by creating a new worksheet titled `Statistical Analysis`, and then proceed to create the following columns: `Outcome`, `backers_count`, `Z-score successful_backers_count`, `Probability_distribution` for successful campaigns, and repeat these columns for unsuccessful campaigns as `Outcome`, `backers_count`, `Z-score failed_backers_count`, `Probability_distribution`.
- 
+First start by creating a new worksheet titled `Statistical Analysis`, and then proceed to create the following columns starting a Column H: `Outcome`, `backers_count`, `Z-score successful_backers_count`, `Probability_distribution` for successful campaigns, and repeat these columns for unsuccessful campaigns as `Outcome`, `backers_count`, `Z-score failed_backers_count`, `Probability_distribution`.
+
+To capture all instances of `successful` outcomes in Column H, we will implement the following formula:
+```excel
+=FILTER(Crowdfunding!G:G, Crowdfunding!G:G="successful")
+```
+We will now apply this formula to obtain the `backers_count`:
+```excel
+=FILTER(Crowdfunding!H:H, Crowdfunding!G:G="successful")
+```
+Next, we will use the same formula for `failed` outcomes, modifying only the last word in the formula. 
+
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
