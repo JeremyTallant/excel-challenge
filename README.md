@@ -189,6 +189,8 @@ After creating the six rows with the specified headings, the next step is to com
 ```excel
 =STDEV(I:I)
 ```
+
+After computing the statistical measures for the `Successful` column as detailed above, you can apply the same Excel formulas to the `Unsuccessful` column. Simply replace the column reference in each formula with the column that corresponds to the `Unsuccessful` data. 
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
