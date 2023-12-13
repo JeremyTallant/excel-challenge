@@ -165,13 +165,29 @@ Then create 6 rows with the following headings:
 * `Standard Deviation`
 
 After creating the six rows with the specified headings, the next step is to compute the respective statistical measures for our dataset using Excel formulas. Below are the Excel formulas that can be used for each heading under the `Successful` column:
-1. **Mean**:
+1. ***Mean***:
 ```excel
-=AVERAGE(M:M)
+=AVERAGE(I:I)
 ```
-2. **Median**:
+2. ***Median***:
 ```excel
-=MEDIAN(M:M)
+=MEDIAN(I:I)
+```
+3. ***Minimum***:
+```excel
+=MIN(I:I)
+```
+4. ***Maximum***
+```excel
+=MAX(I:I)
+```
+5. ***Variance***:
+```excel
+=VAR(I:I)
+```
+6. ***Standard Deviation***:
+```excel
+=STDEV(I:I)
 ```
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
