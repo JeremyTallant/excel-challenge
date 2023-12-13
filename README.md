@@ -163,6 +163,16 @@ Then create 6 rows with the following headings:
 * `Maximum`
 * `Variance`
 * `Standard Deviation`
+
+After creating the six rows with the specified headings, the next step is to compute the respective statistical measures for our dataset using Excel formulas. Below are the Excel formulas that can be used for each heading under the `Successful` column:
+1. **Mean**:
+```excel
+=AVERAGE(M:M)
+```
+2. **Median**:
+```excel
+=MEDIAN(M:M)
+```
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
