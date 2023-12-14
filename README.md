@@ -222,7 +222,7 @@ Conversely, to tally the occurrences of a Z-score greater than 2.68, which point
 ```
 We will apply the same set of formulas to the `Unsuccessful` column, adjusting the cell references accordingly to reflect the data specific to the unsuccessful outcomes. 
 
-[!image](images/SMTable.png)
+![image](images/SMTable.png)
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
