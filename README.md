@@ -190,7 +190,7 @@ After creating the six rows with the specified headings, the next step is to com
 =STDEV(I:I)
 ```
 
-After computing the statistical measures for the `Successful` column as detailed above, you can apply the same Excel formulas to the `Unsuccessful` column. Simply replace the column reference in each formula with the column that corresponds to the `Unsuccessful` data.
+After computing the statistical measures for the `Successful` column as detailed above, you can apply the same Excel formulas to the `Unsuccessful` column. Simply replace the column reference in each formula with the column that corresponds to the `Failed` data.
 
 Now that our summary statistics table is ready, we can proceed to populate it with values for the Z-score and probability distribution for both successful and unsuccessful outcomes. To calculate the `Z-score successful_backers_count`, we use the following formula in Excel:
 ```excel
@@ -200,9 +200,25 @@ For computing the `probability_distribution`, the formula is:
 ```excel
 =NORM.S.DIST(J2,TRUE)
 ```
-Next, we'll extend these formulas down the column to apply them to all relevant data points. The same process will be repeated for the unsuccessful data, with the only modification being the change in column references to align with the unsuccessful dataset.
+Next, we'll extend these formulas down the column to apply them to all relevant data points. The same process will be repeated for the unsuccessful data, with the only modification being the change in column references to align with the unsuccessful data.
 
-Now let's create a summary table by mean 
+Now let's create a `Summary by Mean` table for understanding the distribution of our data, particularly to identify the central tendency and to highlight any potential outliers that may impact the overall analysis. To construct this table in Excel, starting from cell A18, we will outline the following row headings: `Mean + 1SD:`, `Mean`, `Mean - 1SD:`, `Z-SCORE < -2.68 (lower outlier):`, and `Z-SCORE > 2.68 (upper outlier):`. For the `Mean + 1SD:` value in the successful column, the formula is straightforward:
+```excel
+=B7+12
+```
+We can use a cell reference to B7 to populate the `Mean` value for the successful outcomes. To determine the `Mean - 1SD:`, simply subtract the standard deviation from the mean:
+```excel
+=B7-B12
+```
+To count the instances where the Z-score is less than -2.68, indicating significantly lower data points than the mean, we use:
+```excel
+=COUNTIF(J:J, "<-2.68")
+```
+Conversely, to tally the occurrences of a Z-score greater than 2.68, which points to significantly higher data points, then formula is:
+```excel
+=COUNTIF(J:J, ">2.68")
+```
+We will apply the same set of formulas to the `Unsuccessful` column, adjusting the cell references accordingly to reflect the data specific to the unsuccessful outcomes. 
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
