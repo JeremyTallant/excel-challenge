@@ -204,6 +204,8 @@ For computing the `probability_distribution`, the formula is:
 ```
 Next, we'll extend these formulas down the column to apply them to all relevant data points. The same process will be repeated for the unsuccessful data, with the only modification being the change in column references to align with the unsuccessful data.
 
+![image](images/Zscore.png)
+
 Now let's create a `Summary by Mean` table for understanding the distribution of our data, particularly to identify the central tendency and to highlight any potential outliers that may impact the overall analysis. To construct this table in Excel, starting from cell A18, we will outline the following row headings: `Mean + 1SD:`, `Mean`, `Mean - 1SD:`, `Z-SCORE < -2.68 (lower outlier):`, and `Z-SCORE > 2.68 (upper outlier):`. For the `Mean + 1SD:` value in the successful column, the formula is straightforward:
 ```excel
 =B7+12
