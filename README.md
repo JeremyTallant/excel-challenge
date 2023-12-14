@@ -190,7 +190,19 @@ After creating the six rows with the specified headings, the next step is to com
 =STDEV(I:I)
 ```
 
-After computing the statistical measures for the `Successful` column as detailed above, you can apply the same Excel formulas to the `Unsuccessful` column. Simply replace the column reference in each formula with the column that corresponds to the `Unsuccessful` data. 
+After computing the statistical measures for the `Successful` column as detailed above, you can apply the same Excel formulas to the `Unsuccessful` column. Simply replace the column reference in each formula with the column that corresponds to the `Unsuccessful` data.
+
+Now that our summary statistics table is ready, we can proceed to populate it with values for the Z-score and probability distribution for both successful and unsuccessful outcomes. To calculate the `Z-score successful_backers_count`, we use the following formula in Excel:
+```excel
+=STANDARDIZE(I2,$B$7,$B$12)
+```
+For computing the `probability_distribution`, the formula is:
+```excel
+=NORM.S.DIST(J2,TRUE)
+```
+Next, we'll extend these formulas down the column to apply them to all relevant data points. The same process will be repeated for the unsuccessful data, with the only modification being the change in column references to align with the unsuccessful dataset.
+
+Now let's create a summary table by mean 
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
