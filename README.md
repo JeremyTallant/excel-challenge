@@ -262,6 +262,14 @@ Next, we will construct two histogram charts. The first will depict the distribu
 
 ![image](images/SuccessfulHistogram.png)
 
+Now, we will construct two more histogram charts but for the unsuccessful outcomes:
+
+![image](images/FailedHistogram.png)
+
+Finally, we will generate two box and whisker charts to visually identify any outliers within both the successful and unsuccessful outcomes:
+
+![image](images/BoxAndWhisker.png)
+
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
