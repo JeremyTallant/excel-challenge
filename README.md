@@ -285,6 +285,10 @@ Finally, we will generate two box and whisker charts to visually identify any ou
 
 ![image](images/BoxAndWhisker.png)
 
+Here is an image of the final product:
+
+![image](images/StatisticalAnalysis.png)
+
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
@@ -305,6 +309,7 @@ The data indicates that there is more variability in the number of backers for s
 
 * **Variance** for successful campaigns is 1,606,216.59 compared to 924,113.45 for unsuccessful campaigns.
 * **Standard Deviation** for successful campaigns is 1,267.37 compared to 961.31 for unsuccessful campaigns.
+
 These statistics suggest that successful campaigns have a wider spread of backer counts. This greater variability could be due to successful campaigns potentially reaching a larger and more diverse audience, which can lead to a broader range of backing behaviors. Campaigns that resonate with a wider audience might receive varying levels of funding, from small contributions to very large ones, hence the increased spread.
 
 For unsuccessful campaigns, the lower variability implies that there is less fluctuation in the number of backers they attract. This could be because unsuccessful campaigns fail to gain substantial traction, leading to a more homogenous group of backers contributing at similar levels.
