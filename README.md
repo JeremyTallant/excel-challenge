@@ -6,6 +6,13 @@ Welcome to the Crowdfunding Campaign Analysis Project! In the past decade, crowd
 However, the path to crowdfunding success is not straightforward. While some projects soar past their funding goals, others struggle to gain traction. Understanding what contributes to a project's success or failure in such a dynamic and competitive environment is crucial, especially for organizations and individuals looking to launch their own crowdfunding campaigns.
 
 This project focuses on dissecting and analyzing a database of 1,000 sample projects from these crowdfunding platforms. Our objective is to delve deep into this dataset to unearth hidden trends, patterns, and insights that can demystify the elements of successful crowdfunding campaigns. By meticulously organizing and scrutinizing various aspects of these projects — such as funding goals, campaign duration, project categories, and backer count — we aim to uncover potential strategies or commonalities that can be the key to success. Let's dive into the data and discover what it takes to turn a crowdfunding dream into a reality!
+## Table of Contents
+1. [Objective](#Objective)
+2. [Data](#Data)
+3. [Data Preparation and Visualization](#Data Preparation and Visualization)
+4. [Crowdfunding Goal Analysis](Crowdfunding Goal Analysis)
+5. [Statistical Analysis](#Statistical Analysis)
+6. [Crowdfunding Campaign Insights](#Crowdfunding Campaign Insights)
 ## Objective
 In this analysis, we aim to answer the following key questions:
 
