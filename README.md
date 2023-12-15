@@ -251,6 +251,8 @@ Then we will find the upper boundary beyond which data points may be outliers. T
 =B37+(1.5*B38)
 ```
 Repeat the same process for the unsuccessful column, ensuring that you adjust the cell references accordingly. 
+
+![image](images/MedianTable.png)
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
