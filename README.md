@@ -253,6 +253,11 @@ Then we will find the upper boundary beyond which data points may be outliers. T
 Repeat the same process for the unsuccessful column, ensuring that you adjust the cell references accordingly. 
 
 ![image](images/MedianTable.png)
+
+To visually represent the data we have compiled, we'll proceed to create eight charts on the Statistical Analysis worksheet. The initial two charts will display the average number of backers for both successful and unsuccessful outcomes, alongside the median. These will be illustrated using a 2D column chart.
+
+![image](images/Comparison.png)
+
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
