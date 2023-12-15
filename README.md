@@ -6,6 +6,21 @@ Welcome to the Crowdfunding Campaign Analysis Project! In the past decade, crowd
 However, the path to crowdfunding success is not straightforward. While some projects soar past their funding goals, others struggle to gain traction. Understanding what contributes to a project's success or failure in such a dynamic and competitive environment is crucial, especially for organizations and individuals looking to launch their own crowdfunding campaigns.
 
 This project focuses on dissecting and analyzing a database of 1,000 sample projects from these crowdfunding platforms. Our objective is to delve deep into this dataset to unearth hidden trends, patterns, and insights that can demystify the elements of successful crowdfunding campaigns. By meticulously organizing and scrutinizing various aspects of these projects — such as funding goals, campaign duration, project categories, and backer count — we aim to uncover potential strategies or commonalities that can be the key to success. Let's dive into the data and discover what it takes to turn a crowdfunding dream into a reality!
+## Objective
+In this analysis, we aim to answer the following key questions:
+
+1. Given, the provided data, what are three conclusions that we can draw about crowdfunding campaigns?
+
+2. What are some limitations of this dataset?
+
+3. What are some other possible tables and/or graphs that we could create, and what additional value would they provide?
+
+4. Does the mean or the median provide a better summary of the data when assessing the number of campaign backers?
+
+5. Is there more variability in the number of backers among successful or unsuccessful campaigns, and what might this indicate about the nature of crowdfunding success?
+
+The subsequent sections will explore the data to provide insights into the questions. 
+
 ## Data
 This project utilizes a specially curated dataset titled `CrowdfundingBook.xlsx`, provided by edX Boot Camps LLC. The dataset is designed for educational purposes, offering a unique opportunity to explore the dynamics of crowdfunding campaigns. A brief description of each column is provided in the table below: 
 | Column Name             | Description |
@@ -137,7 +152,7 @@ Next we will create a line chart that graphs the relationship between  a goal am
 ## Statistical Analysis
 Most people would use the number of campaign backers to assess the success of a crowdfunding campaign. Creating a summary statistics table is one of the most efficient ways that data scientists can characterize quantitative metrics, such as the number of campaign backers.
 
-For gaining an in-depth understanding of campaign backers, we are going to evaluate the number of backers of successful and unsuccessful campaigns by creating **our own** summary statistics table. 
+For gaining an in-depth understanding of campaign backers, we are going to evaluate the number of backers of successful and unsuccessful campaigns by creating **our own** summary statistics table.
 
 First start by creating a new worksheet titled `Statistical Analysis`, and then proceed to create the following columns starting at Column H: `Outcome`, `backers_count`, `Z-score successful_backers_count`, `Probability_distribution` for successful campaigns, and repeat these columns for unsuccessful campaigns as `Outcome`, `backers_count`, `Z-score failed_backers_count`, `Probability_distribution`.
 
@@ -283,5 +298,17 @@ Finally, we will generate two box and whisker charts to visually identify any ou
 * **Average Donations by Category**: A pivot table and chart reflecting average donations per category could provide deeper understanding of donor expectations within each category.
 * **Percent Funded by Category**: Visualizing the percent funded relative to goals in each category might offer insights into which categories tend to receive more generous funding.
 * **Backer Count by Category**: Analyzing the count of backers in each category through a pivot table and chart could inform expectations regarding participant numbers in crowdfunding campaigns by category.
+### Summary of Data
+Upon analyzing the statistical metrics, it becomes evident that the median offers a more reliable summary of the central tendency for both successful and unsuccessful crowdfunding campaigns, as compared to the mean. This inference is drawn from the observation that the mean is substantially higher than the median in both categories, indicative of a right-skewed distribution where the presence of outliers inflates the mean. Specifically, the successful campaigns demonstrate a mean of 851.15 against a median of 201, with 17 instances exceeding the upper outlier threshold. Unsuccessful campaigns also show a similar pattern with a mean of 585.62 as opposed to a median of 114.5 and 12 upper outliers. The data, therefore, suggests that the median, being less sensitive to extreme values, more accurately represents the typical number of backers and is less distorted by the variability introduced by the outliers.
+### Variability in Campaign Success
+The data indicates that there is more variability in the number of backers for successful campaigns compared to unsuccessful ones, as shown by the higher variance and standard deviation for successful campaigns:
+
+* **Variance** for successful campaigns is 1,606,216.59 compared to 924,113.45 for unsuccessful campaigns.
+* **Standard Deviation** for successful campaigns is 1,267.37 compared to 961.31 for unsuccessful campaigns.
+These statistics suggest that successful campaigns have a wider spread of backer counts. This greater variability could be due to successful campaigns potentially reaching a larger and more diverse audience, which can lead to a broader range of backing behaviors. Campaigns that resonate with a wider audience might receive varying levels of funding, from small contributions to very large ones, hence the increased spread.
+
+For unsuccessful campaigns, the lower variability implies that there is less fluctuation in the number of backers they attract. This could be because unsuccessful campaigns fail to gain substantial traction, leading to a more homogenous group of backers contributing at similar levels.
+
+This interpretation aligns with the intuitive understanding of crowdfunding dynamics, where successful campaigns might go viral or hit a chord with a wide audience, resulting in a highly variable backer count. In contrast, unsuccessful campaigns may not experience this level of exposure or engagement, leading to more uniformity in their backer numbers.
 
  
