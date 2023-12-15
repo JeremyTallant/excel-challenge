@@ -226,7 +226,31 @@ We will apply the same set of formulas to the `Unsuccessful` column, adjusting t
 
 ![image](images/SMTable.png)
 
-Now let's create another table titled `Summary by Median` that calculates the quartiles, interquartile range (IQR), and identifies potential outliers using the IQR method. Start by creating 6 row headings: `First Quartile`, `Second Quartile`, `Third Quartile`, `Interquartile Range`, `Q1 - (1.5 * IQR) lower boundary`, and `Q3 + (1.5 * IQR) upper boundary`. 
+Now let's create another table titled `Summary by Median` that calculates the quartiles, interquartile range (IQR), and identifies potential outliers using the IQR method. Start by labeling 6 row headings: `First Quartile`, `Second Quartile`, `Third Quartile`, `Interquartile Range`, `Q1 - (1.5 * IQR) lower boundary`, and `Q3 + (1.5 * IQR) upper boundary`. First we will calculate the first quartile of the data located in column I. To calculate the `First Quartile` in the successful column, we will apply the following formula:
+```excel
+=QUARTILE.EXC(I:I,1)
+```
+Now we will calculate the median of the data in column I. For the `Second Quartile` use:
+```excel
+=QUARTILE.EXC(I:I,2)
+```
+Then we will find the third quartile value for the data in column I. For `Third Quartile` input:
+```excel
+=QUARTILE.EXC(I:I,3)
+```
+Next we will find the interquartile range by taking the difference between the third and first quartile. To calculate the `Interquartile Range` apply:
+```excel
+=B37-B35
+```
+Let's find the lower boundary beyond which data points could be considered outliers. To find the `Q1 - (1.5 * IQR) lower boundary` use:
+```excel
+=B35-(1.5*B38)
+```
+Then we will find the upper boundary beyond which data points may be outliers. To find the `Q3 + (1.5 * IQR) upper boundary` use:
+```excel
+=B37+(1.5*B38)
+```
+Repeat the same process for the unsuccessful column, ensuring that you adjust the cell references accordingly. 
 ## Crowdfunding Campaign Insights
 ### Conclusions from Data Analysis:
 * **Category Performance**: Analysis indicates that performance-based categories such as theater, music, film, and video boast higher success rates compared to others, with theater leading and film/video, and music closely tied.
