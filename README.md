@@ -66,7 +66,7 @@ For the first part of our analysis, we will apply conditional formatting to the 
 
 ![image](images/outcome.png)
 
-Next we will create a new column called `Percent Funded` to the left of the outcome column that uses a formula to find out how much money a campaign made relative to its initial funding goal. The formula to be used is as follows:
+Next, we will create a new column called `Percent Funded` to the left of the outcome column that uses a formula to find out how much money a campaign made relative to its initial funding goal. The formula to be used is as follows:
 ```excel
 =E2/D2*100
 ```
@@ -74,7 +74,7 @@ Ensure the column is formatted as a Number with no decimal places. Then we will 
 
 ![image](images/percentfunded.png)
 
-Now let's create a new column called `Average Donation` that uses a formula to find how much each project backer paid on average. The formula to be applied is as follows:
+Now, let's create a new column called `Average Donation` that uses a formula to find how much each project backer paid on average. The formula to be applied is as follows:
 ```excel
 =E3/H3
 ```
@@ -82,7 +82,7 @@ Format the column as a Number with two decimal places and modify cell I1 to 0 to
 
 ![image](images/AverageDonation.png)
 
-Then create two new columns, one called `Parent Category` and another called `Sub-Category`, that uses formulas to split the `Category and Sub-Category` column into the two new, separate columns. The formula for Parent Category is as follows: 
+Then, create two new columns, one called `Parent Category` and another called `Sub-Category`, that uses formulas to split the `Category and Sub-Category` column into the two new, separate columns. The formula for Parent Category is as follows: 
 ```excel 
 =LEFT(P2,SEARCH("/",P2)-1)
 ```
@@ -93,11 +93,11 @@ For Sub-Category, use this formula:
 
 ![image](images/CategorySplit.png)
 
-Now lets create a new worksheet named `Category` and insert a pivot table to analyze the initial worksheet. This pivot table will quantify the number of campaigns that were successful, failed, canceled, or are currently live, categorized by **category**. Begin by selecting any cell within the Crowdfunding worksheet, then navigate to the Insert tab and select Pivot Table. Add this pivot table to the `Category` worksheet. Subsequently, drag `Parent Category` to the rows, `outcome` to the columns and values section, and `country` to the filter section.
+Now, let's create a new worksheet named `Category` and insert a pivot table to analyze the initial worksheet. This pivot table will quantify the number of campaigns that were successful, failed, canceled, or are currently live, categorized by **category**. Begin by selecting any cell within the Crowdfunding worksheet, then navigate to the Insert tab and select Pivot Table. Add this pivot table to the `Category` worksheet. Subsequently, drag `Parent Category` to the rows, `outcome` to the columns and values section, and `country` to the filter section.
 
 ![image](images/PivotTable1.png)
 
-Then create a stacked-column pivot chart with a country filter, based on the table we have created. Begin by selecting any cell within the pivot table. Then, navigate to the `Insert` tab and select `PivotChart`. After inserting the chart, change the chart type to a stacked-column chart
+Then, create a stacked-column pivot chart with a country filter, based on the table we have created. Begin by selecting any cell within the pivot table. Then, navigate to the `Insert` tab and select `PivotChart`. After inserting the chart, change the chart type to a stacked-column chart
 
 ![image](images/PivotChart1.png)
 
@@ -105,7 +105,7 @@ Next, lets create a new worksheet titled `Sub-Category` with a pivot table that 
 
 ![image](images/PivotTable2.png)
 
-Then create a stacked-column pivot chart that can be filtered by country and parent category, based on the table we have created. Begin by selecting any cell within the pivot table. Then, navigate to the `Insert` tab and select `PivotChart`. After inserting the chart, change the chart type to a stacked-column chart
+Then, create a stacked-column pivot chart that can be filtered by country and parent category, based on the table we have created. Begin by selecting any cell within the pivot table. Then, navigate to the `Insert` tab and select `PivotChart`. After inserting the chart, change the chart type to a stacked-column chart
 
 ![image](images/PivotChart2.png)
 
@@ -152,9 +152,9 @@ In the `Goal` column, create 12 rows with the following headers:
 
 Using the `COUNTIFS()` formula, we will count how many successful, failed, and canceled projects were created with goals within the ranges listed above. We will populate the `Number Successful`, `Number Failed`, and `Number Canceled` columns with these data points.
 
-Then we are going to add up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematical formula, we will find the percentage of projects that were successful, failed, or canceled per goal range. 
+Then, we are going to add up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematical formula, we will find the percentage of projects that were successful, failed, or canceled per goal range. 
 
-Next we will create a line chart that graphs the relationship between  a goal amount and its chances of success, failure, or cancellation. 
+Next, we will create a line chart that graphs the relationship between  a goal amount and its chances of success, failure, or cancellation. 
 
 ![image](images/GoalAnalysis.png)
 ## Statistical Analysis
@@ -179,7 +179,7 @@ We will then commence the construction of our summary statistics table in Column
 * `Successful`
 * `Failed` 
 
-Then create 6 rows with the following headings:
+Then, create 6 rows with the following headings:
 * `Mean`
 * `Median`
 * `Minimum`
@@ -217,7 +217,7 @@ After computing the statistical measures for the `Successful` column as detailed
 
 ![image](images/SSTable.png)
 
-Now that our summary statistics table is ready, we can proceed to populate the values for the Z-score and probability distribution for both successful and unsuccessful outcomes. To calculate the `Z-score successful_backers_count`, we use the following formula in Excel:
+Now, that our summary statistics table is ready, we can proceed to populate the values for the Z-score and probability distribution for both successful and unsuccessful outcomes. To calculate the `Z-score successful_backers_count`, we use the following formula in Excel:
 ```excel
 =STANDARDIZE(I2,$B$7,$B$12)
 ```
@@ -229,7 +229,7 @@ Next, we'll extend these formulas down the column to apply them to all relevant 
 
 ![image](images/Zscore.png)
 
-Now let's create a `Summary by Mean` table for understanding the distribution of our data, particularly to identify the central tendency and to highlight any potential outliers that may impact the overall analysis. To construct this table in Excel, starting from cell A18, we will outline the following row headings: `Mean + 1SD:`, `Mean`, `Mean - 1SD:`, `Z-SCORE < -2.68 (lower outlier):`, and `Z-SCORE > 2.68 (upper outlier):`. For the `Mean + 1SD:` value in the successful column, the formula is straightforward:
+Now, let's create a `Summary by Mean` table for understanding the distribution of our data, particularly to identify the central tendency and to highlight any potential outliers that may impact the overall analysis. To construct this table in Excel, starting from cell A18, we will outline the following row headings: `Mean + 1SD:`, `Mean`, `Mean - 1SD:`, `Z-SCORE < -2.68 (lower outlier):`, and `Z-SCORE > 2.68 (upper outlier):`. For the `Mean + 1SD:` value in the successful column, the formula is straightforward:
 ```excel
 =B7+12
 ```
@@ -249,19 +249,19 @@ We will apply the same set of formulas to the `Unsuccessful` column, adjusting t
 
 ![image](images/SMTable.png)
 
-Now let's create another table titled `Summary by Median` that calculates the quartiles, interquartile range (IQR), and identifies potential outliers using the IQR method. Start by labeling 6 row headings: `First Quartile`, `Second Quartile`, `Third Quartile`, `Interquartile Range`, `Q1 - (1.5 * IQR) lower boundary`, and `Q3 + (1.5 * IQR) upper boundary`. First we will calculate the first quartile of the data located in column I. To calculate the `First Quartile` in the successful column, we will apply the following formula:
+Now, let's create another table titled `Summary by Median` that calculates the quartiles, interquartile range (IQR), and identifies potential outliers using the IQR method. Start by labeling 6 row headings: `First Quartile`, `Second Quartile`, `Third Quartile`, `Interquartile Range`, `Q1 - (1.5 * IQR) lower boundary`, and `Q3 + (1.5 * IQR) upper boundary`. First we will calculate the first quartile of the data located in column I. To calculate the `First Quartile` in the successful column, we will apply the following formula:
 ```excel
 =QUARTILE.EXC(I:I,1)
 ```
-Now we will calculate the median of the data in column I. For the `Second Quartile` use:
+Now, we will calculate the median of the data in column I. For the `Second Quartile` use:
 ```excel
 =QUARTILE.EXC(I:I,2)
 ```
-Then we will find the third quartile value for the data in column I. For `Third Quartile` input:
+Then, we will find the third quartile value for the data in column I. For `Third Quartile` input:
 ```excel
 =QUARTILE.EXC(I:I,3)
 ```
-Next we will find the interquartile range by taking the difference between the third and first quartile. To calculate the `Interquartile Range` apply:
+Next, we will find the interquartile range by taking the difference between the third and first quartile. To calculate the `Interquartile Range` apply:
 ```excel
 =B37-B35
 ```
@@ -269,7 +269,7 @@ Let's find the lower boundary beyond which data points could be considered outli
 ```excel
 =B35-(1.5*B38)
 ```
-Then we will find the upper boundary beyond which data points may be outliers. To find the `Q3 + (1.5 * IQR) upper boundary` use:
+Then, we will find the upper boundary beyond which data points may be outliers. To find the `Q3 + (1.5 * IQR) upper boundary` use:
 ```excel
 =B37+(1.5*B38)
 ```
