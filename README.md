@@ -7,12 +7,12 @@ However, the path to crowdfunding success is not straightforward. While some pro
 
 This project focuses on dissecting and analyzing a database of 1,000 sample projects from these crowdfunding platforms. Our objective is to delve deep into this dataset to unearth hidden trends, patterns, and insights that can demystify the elements of successful crowdfunding campaigns. By meticulously organizing and scrutinizing various aspects of these projects — such as funding goals, campaign duration, project categories, and backer count — we aim to uncover potential strategies or commonalities that can be the key to success. Let's dive into the data and discover what it takes to turn a crowdfunding dream into a reality!
 ## Table of Contents
-1. [Objective](#objective)
-2. [Data](#data)
-3. [Data Preparation and Visualization](#data-preparation-and-visualization)
-4. [Crowdfunding Goal Analysis](#crowdfunding-goal-analysis)
-5. [Statistical Analysis](#statistical-analysis)
-6. [Crowdfunding Campaign Insights](#crowdfunding-campaign-insights)
+* [Objective](#objective)
+* [Data](#data)
+* [Data Preparation and Visualization](#data-preparation-and-visualization)
+* [Crowdfunding Goal Analysis](#crowdfunding-goal-analysis)
+* [Statistical Analysis](#statistical-analysis)
+* [Crowdfunding Campaign Insights](#crowdfunding-campaign-insights)
 
 ## Objective
 In this analysis, we aim to answer the following key questions:
